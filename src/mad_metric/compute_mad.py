@@ -1,4 +1,5 @@
 import os
+import gc
 
 import librosa
 import pandas as pd
@@ -66,6 +67,13 @@ def featurize(input_dir, output_dir=None, batch_size=3, model_name='mert_330m', 
             outs.append(batch_embs.cpu())
     
     outs = torch.cat(outs, dim=0)
+
+    # Free up memory
+    del model
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    gc.collect()
+
     return outs
 
 def load_embs_from_dir(embs_dir):
