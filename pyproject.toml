@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mad_metric"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Yichen Huang", email="wh4@andrew.cmu.edu" },
 ]
@@ -21,7 +21,7 @@ dependencies = [
     "mauve_text >= 0.4.0",
     "numpy >= 1.23.0",
     "pandas >= 2.0.0",
-    "torch >= 2.5.0",
+    "torch >= 2.4.1",
     "tqdm >= 4.66.0",
     "transformers >= 4.31.0",
 ]

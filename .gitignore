@@ -1,3 +1,6 @@
 *.pyc
 
+dist
+mad_metric.egg-info
+
 debug.py
