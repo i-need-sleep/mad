@@ -1,5 +1,5 @@
 # MAD
-Implementation for MAUVE Audio Distance (MAD) as described in [Aligning Text-to-Music Evaluation with Human Preferences](). Sound examples for the meta-evaluation data can be found on our [demo page](https://mad-metric-83cde1d399d1.herokuapp.com/). The MusicPrefs dataset is available on [Huggingface](https://huggingface.co/datasets/i-need-sleep/musicprefs/tree/main).
+Implementation for MAUVE Audio Distance (MAD) as described in [Aligning Text-to-Music Evaluation with Human Preferences](https://www.arxiv.org/pdf/2503.16669). Sound examples for the meta-evaluation data can be found on our [demo page](https://mad-metric-83cde1d399d1.herokuapp.com/). The MusicPrefs dataset is available on [Huggingface](https://huggingface.co/datasets/i-need-sleep/musicprefs/tree/main).
 
 ## Installation
 Install using pip:
