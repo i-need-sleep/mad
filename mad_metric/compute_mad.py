@@ -97,14 +97,14 @@ def compute_mad(
     if eval_dir != None:
         eval_embs = featurize(eval_dir, eval_embs_dir, batch_size, model_name, layer, aggregation)
     elif eval_embs_dir != None:
-        eval_embs = torch.load(eval_embs_dir)
+        eval_embs = load_embs_from_dir(eval_embs_dir)
     else:
         raise ValueError('Either eval_dir or eval_embs_dir must be provided')
     
     if ref_dir != None:
         ref_embs = featurize(ref_dir, ref_embs_dir, batch_size, model_name, layer, aggregation)
     elif ref_embs_dir != None:
-        ref_embs = torch.load(ref_embs_dir)
+        ref_embs = load_embs_from_dir(ref_embs_dir)
     else:
         raise ValueError('Either ref_dir or ref_embs_dir must be provided')
     
